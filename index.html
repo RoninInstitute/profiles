@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <title>Redirecting…</title>
+</head>
+<body>
+  <script>
+    const base = 'https://sites.google.com/ronininstitute.org/internal';
+    const path = window.location.pathname;
+    const query = window.location.search;
+    const target = base + path + query;
+
+    window.location.replace(
+      'https://accounts.google.com/AccountChooser?continue=' +
+      encodeURIComponent(target)
+    );
+  </script>
+
+  <p>Redirecting…</p>
+</body>
+</html>
