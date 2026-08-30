@@ -8,9 +8,7 @@
 <body>
   <script>
     const base = 'https://sites.google.com/ronininstitute.org/internal';
-    const path = window.location.pathname;
-    const query = window.location.search;
-    const target = base + path + query;
+    const target = base + window.location.pathname + window.location.search;
 
     window.location.replace(
       'https://accounts.google.com/AccountChooser?continue=' +
